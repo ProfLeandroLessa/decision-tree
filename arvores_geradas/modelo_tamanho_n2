@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<glicose &le; 127.5<br/>gini = 0.5<br/>samples = 364<br/>value = [179, 185]<br/>class = DIABETICO>, fillcolor="#f9fcfe"] ;
+1 [label=<idade &le; 28.5<br/>gini = 0.404<br/>samples = 217<br/>value = [156, 61]<br/>class = NÃO DIABETICO>, fillcolor="#efb286"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.184<br/>samples = 107<br/>value = [96, 11]<br/>class = NÃO DIABETICO>, fillcolor="#e88f50"] ;
+1 -> 2 ;
+3 [label=<gini = 0.496<br/>samples = 110<br/>value = [60, 50]<br/>class = NÃO DIABETICO>, fillcolor="#fbeade"] ;
+1 -> 3 ;
+4 [label=<IMC &le; 29.85<br/>gini = 0.264<br/>samples = 147<br/>value = [23, 124]<br/>class = DIABETICO>, fillcolor="#5eafea"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<gini = 0.499<br/>samples = 31<br/>value = [16, 15]<br/>class = NÃO DIABETICO>, fillcolor="#fdf7f3"] ;
+4 -> 5 ;
+6 [label=<gini = 0.113<br/>samples = 116<br/>value = [7, 109]<br/>class = DIABETICO>, fillcolor="#46a3e7"] ;
+4 -> 6 ;
+}
